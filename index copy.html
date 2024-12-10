@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <script src="./js/tailwind-3.14.6.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet"
+    >
+    <script
+        defer
+        src="./js/script.js"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/style2.css"
+    >
+    <title>TOD</title>
+</head>
+
+<body>
+    <section class="lg:h-screen">
+        <!-- navbar -->
+        <nav class="container mx-auto flex justify-between items-end px-2 md:px-4 pt-6 md:pt-12">
+            <div class="icon md:basis-3/12">
+                <img src="/assets/images/logo.png" alt="xac logo" class="sm:w-40 sm:h-auto md:w-48 md:h-auto object-contain">
+            </div>
+            
+            <!-- nav -->
+            <ul class="hidden sm:flex space-x-12 tod-darkest md:basis-6/12 justify-center">
+                <li><a href="#" class="hover:text-orange-500 tracking-wider">Давуу тал</a></li>
+                <li><a href="#" class="hover:text-orange-500 tracking-wider">Боломжит эрх</a></li>
+                <li><a href="#" class="hover:text-orange-500 tracking-wider">Заавар</a></li>
+            </ul>
+
+            <!-- mobile -->
+            <button id="menuBtn" class="sm tod-darkest hover:text-orange-500 focus:outline-none text-2xl md:basis-3/12 text-right self-center">
+                &#9776;
+            </button>
+        </nav>
+
+        <!-- mobile nav -->
+        <ul id="mobileMenu" class="hidden flex-col space-y-4 text-center tod-darkest sm:hidden">
+            <li><a href="#" class="block hover:text-orange-500">Давуу тал</a></li>
+            <li><a href="#" class="block hover:text-orange-500">Боломжит эрх</a></li>
+            <li><a href="#" class="block hover:text-orange-500">Заавар</a></li>
+        </ul>
+
+        <!-- Hero Section -->
+        <section class="container mt-4 md:mt-0 mx-auto px-2 md:px-4">
+            <div class="md:flex items-center mx-auto md:w-[95%] lg:w-[90%] min-h-[50vh] md:min-h-[80vh]">
+                <div class="left text-center md:text-left relative xl:translate-y-[-10%]">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[84px] font-[900]">
+                        <div class="tod-primary tracking-wide" id="heroText">Одоо</div>
+                        <div class="tod-dark tracking-wide">Асуудалгүй</div>
+                    </h1>
+                    <div class="w-full md:flex md:mt-14">
+                        <div class="pt-4 md:pt-8 md:pr-6">
+                            <div class="aspect-square max-w-[57px] mx-auto md:mx-0">
+                                <img src="/assets/images/hero-icon.png" alt="boy" class="object-cover w-full h-full">
+                            </div>
+                        </div>        
+                        <div class="">
+                            <p class="text-gray-700 mt-4 text-base md:text-lg font-bold">
+                                Дансны үлдэгдэл хүрэлцэхгүй гэж дахин 
+                                <span class="tod-secondary underline decoration-wavy decoration-black decoration-1 underline-offset-4">сонсохгүй.</span>
+                            </p>
+                            <p class="text-gray-700 mt-4 text-base">
+                                Данс бэлэн биш ч таны гүйлгээ Асуудалгүй үйлчилгээг идэвхжүүлснээр амжилттай хийгдэх болно.
+                            </p>
+                        </div>                                   
+                    </div>       
+                </div>           
+                <div class="relative aspect-square md:flex items-center">
+                    <!-- <div class="absolute z-10 top-0 aspect-square max-w-[30px]">
+                        <img src="/assets/images/hero-star.png" alt="boy" class="object-cover w-full h-full">
+                    </div> -->
+                    <div class="w-[100%] h-[100%] md:w-[80%] md:h-[80%] lg:w-[85%] lg:h-[85%] mr-0 ml-auto xl:translate-y-[10%]"">
+                        <video class="w-full h-full "
+                            preload="auto" 
+                            loop
+                            autoplay
+                            muted
+                            poster="/assets/images/placeholder-img.png">
+                            <source src="/assets/videos/hero-animation.mp4" type="video/mp4">
+                            Видео дэмжихгүй байна.
+                        </video>             
+                    </div>                
+                </div>
+            </div>       
+        </section>
+    </section>
+   
+
+    <!-- Marquee -->
+    <section class="overflow-x-hidden bg-black text-white py-2">
+        <div id="marquee-container" class="animate-marquee whitespace-nowrap"></div>
+    </section>
+    
+    <!-- About Box -->
+    <section class="container mx-auto px-2 md:px-4">
+        <!-- First Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 mb-8">
+            <div class="leftImg">
+                <img src="./assets/images/girl.gif" alt="Girl" class="w-48 mx-auto md:mx-0">
+            </div>
+            <div class="leftText text-center md:text-left">
+                <h2 class="text-2xl font-bold mb-4">Асуудалгүй үйлчилгээ гэж юу вэ?</h2>
+                <p class="text-gray-700">
+                    Хүн бүрийн сонсохыг хүсдэггүй үг гэвэл яалт ч үгүй
+                    <span class="font-semibold">"ДАНСНЫ ҮЛДЭГДЭЛ ХҮРЭЛЦЭХГҮЙ БАЙНА."</span>
+                </p>
+            </div>
+            </div>
+        
+            <div class="relative mb-8">
+                <img src="/assets/images/arrow.png" alt="Boy" class="w-48 mx-auto md:mx-0">
+            </div>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+                <div class="leftText text-center md:text-left">
+                    <p class="text-gray-700">
+                        Тэгвэл дансны үлдэгдэл хүрэлцэхгүйгээс болж яг цагтаа тооцоогоо хийж чадахгүй эвгүй байдалд орох, эсвэл багахан мөнгө дутсанаас болж чухал төлбөр төлөгдөлгүй бүр том асуудал үүсэх гэх мэт асуудлуудыг АСУУДАЛГҮЙ зохицуулна.
+                    </p>
+                </div>
+                <div class="rightImg">
+                    <img src="/assets/images/boy.gif" alt="Boy" class="w-48 mx-auto md:mx-0">
+                </div>
+            </div>
+    </section>
+
+    <!-- Orange Banner -->
+    <section class="container rounded-2xl mx-auto bg-orange-500 text-white px-2 md:px-4">
+        
+        <div class="text-3xl font-bold">
+            <div>ХасБанктай </div>
+            <div>
+                Асуудалгүй
+            </div>
+        </div>
+        
+        <div class="d-flex">
+            <div>
+                <img src="/assets/images/hand.png" alt="">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Яаж зохицуулах юм?</h2>
+                <p class="mb-6 text-base">
+                    Асуудалгүй үйлчилгээ нь таны дансны үлдэгдэл хүрэлцэхгүй үед хасах утга руу оруулан гүйлгээ хийж, төлбөр тооцоогоо саадгүй гүйцэтгэхэд тань туслах нэмэлт үйлчилгээ юм. 
+                </p>
+                <ul class="text-base">
+                    <li>Данс бэлэн биш байхад  ороод ирдэг хэрэглээний төлбөрүүдийг Дижитал банкаараа шилжүүлэг хийн төлөхөд одоо бэлэн;
+                    </li>
+                    <li>Картын үлдэгдэл хүрэлцэхгүй байсан ч өөртөө итгэлтэйгээр уншуулахад одоо асуудалгүй;
+                    </li>
+                    <li>Тэр ч бүү хэл АТМ-ээс бэлэн мөнгө болгон авсан ч болно.
+                    </li>
+                </ul>
+                <button class="bg-white text-orange-500 font-bold py-2 px-6 rounded hover:bg-gray-200">
+                    Яг одоо хэрэгтэй.
+                </button>
+            </div>
+        </div>        
+    </section>
+    <!-- Advantage Section -->
+    <section class="container mx-auto py-12 px-6">
+        <h2 class="text-2xl font-bold text-center mb-8">
+            <div>Okay. </div> 
+            Бусдаас ямар давуу талтай юм?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-base">
+            <div class="text-center">
+                <div class="mb-4">
+                    <img class="mx-auto" src="/assets/images/adv1.png" alt="Бүгдэд нээлттэй">
+                </div>
+                <h3 class="font-bold mb-2">Бүгдэд нээлттэй</h3>
+                <p>ХасБанкны данстай л бол хүн бүр ашиглах боломжтой. Өр орлогын харьцаа тооцохгүйгээр 150,000₮-ийн эрх шууд нээгдэнэ. 400,000₮ хүртэл нэмэх ч боломжтой.</p>
+            </div>
+            <div class="text-center">
+                <div class="mb-4">
+                    <img class="mx-auto" src="/assets/images/adv2.png" alt="Хураамж бага">
+                </div>
+                <h3 class="font-bold mb-2">Хураамж бага</h3>
+                <p>Үйлчилгээг идэвхжүүлсэн ч гэсэн ашиглаагүй бол үйлчилгээний хураамж төлөхгүй. Ашигласан тохиолдолд хэдэн удаа ашигласнаас үл хамааран тогтмол дүнгээр сард 1 удаа л хураамж төлнө.</p>
+            </div>
+            <div class="text-center">
+                <div class="mb-4">
+                    <img class="mx-auto" src="/assets/images/adv3.png" alt="Үргэлж бэлэн">
+                </div>
+                <h3 class="font-bold mb-2">Үргэлж бэлэн</h3>
+                <p>Дижитал банкаараа нэг л удаа идэвхжүүлэхэд хангалттай. <span>Бусад апп-ын зээл</span> шиг ашиглах бүрдээ тооцоолол хийлгэх шаардлагагүй.</p>
+            </div>
+            <div class="text-center">
+                <div class="mb-4">
+                    <img class="mx-auto" src="/assets/images/adv4.png" alt="Хүүгүй">
+                </div>
+                <h3 class="font-bold mb-2">Хүүгүй</h3>
+                <p>Үйлчилгээг ашигласан дүнгээс үл хамааран нэг удаа тогтмол үйлчилгээний хураамж төлөх бөгөөд нэмэлт хүү төлөхгүй.</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // menu button
+        document.getElementById('menuBtn').addEventListener('click', function () {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // text swiper
+        const heroTexts = ['Одоо', 'Ямар ч', 'Зүгээр л', 'Тийм', 'Тэхх'];
+        const heroTextEl = document.getElementById('heroText');
+        let currentIdx = 0;
+
+        function updateHeroTitle() {
+            heroTextEl.textContent = heroTexts[currentIdx];
+            currentIdx = (currentIdx + 1) % heroTexts.length;
+        }
+
+        // marquee
+        const marqueeContainer = document.getElementById("marquee-container");
+        const texts = [
+            "Одоо асуудалгүй", "Ямар ч асуудалгүй", "Тэхх асуудалгүй", 
+            "Угаасаа асуудалгүй", "Тийм асуудалгүй", "Зүгээр л асуудалгүй"
+        ];
+
+        const createMarqueeText = (text) => {
+            const span = document.createElement('span');
+            span.classList.add("hover:text-orange-400", "mr-12", "font-bold", "tod-light", "text-nowrap");
+            span.textContent = text;
+            return span;
+        };
+
+        texts.forEach((text) =>  marqueeContainer.appendChild(createMarqueeText(text)));
+
+        for (let i = 0; i < 10; i++) {
+            texts.forEach((text) => {
+                marqueeContainer.appendChild(createMarqueeText(text));
+            });
+        }
+    });
+
+    updateHeroTitle();
+    setInterval(updateHeroTitle, 1000);
+</script>
+</html>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="title"
+        content="Хасбанк"
+    >
+    <meta
+        name="description"
+        content="ХасБанк 2001 онд байгууллагдсан цагаасаа Монгол Улсын банк санхүүгийн системд тогтвортой өсөлтийг бий болгож, үйл ажиллагаагаа өргөтгөж ирсэн бөгөөд өдгөө банкны системд нөлөө бүхий 5 банкны нэг болоод байна."
+    >
+    <meta
+        name="keywords"
+        content="xacbank, TOD, Overdraft, асуудалгүй, зээл, XacBank"
+    >
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=utf-8"
+    >
+    <script src="./js/tailwind-3.14.6.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link
+        href="./assets/images/favicon.png"
+        rel="shortcut icon"
+        sizes="50x50"
+        type="image/x-icon"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+        rel="stylesheet"
+    >
+    <script
+        defer
+        src="./js/script.js"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+    <title>Асуудалгүй</title>
+</head>
+
+<body>
+    <!-- Video section -->
+    <section class="">
+        <div class="video__wrapper">
+            <button
+                type="button"
+                class="video__play-button md:w-16 md:h-16 w-12 h-12"
+                data-button-state="pause"
+            >
+                <svg
+                    class="video__play-button-icon video__play-button-icon--play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 140 140"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="white"
+                        d="M70 140L70 140c-38.7 0-70-31.3-70-70l0 0C0 31.3 31.3 0 70 0l0 0c38.7 0 70 31.3 70 70l0 0C140 108.7 108.7 140 70 140z"
+                    />
+                    <polygon
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        points="57 50.9 57 89.4 88.5 70.2 "
+                    />
+                </svg>
+                <svg
+                    class="video__play-button-icon video__play-button-icon--pause"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 140 140"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="white"
+                        d="M70 140L70 140c-38.7 0-70-31.3-70-70v0C0 31.3 31.3 0 70 0h0c38.7 0 70 31.3 70 70v0C140 108.7 108.7 140 70 140z"
+                    />
+                    <rect
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        x="56"
+                        y="50.8"
+                        class="st1"
+                        width="8.8"
+                        height="38.5"
+                    />
+                    <rect
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        x="75.2"
+                        y="50.8"
+                        class="st1"
+                        width="8.8"
+                        height="38.5"
+                    />
+                </svg>
+            </button>
+            <video
+                class="ad-video"
+                data-state="pause"
+                playsinline
+            >
+                <!--     <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4"> -->
+                <source
+                    src="./assets/videos/demo.mp4"
+                    type="video/mp4"
+                >
+
+            </video>
+        </div>
+    </section>
+    <!-- Fee section -->
+    <section class="container px-2 md:px-4 mx-auto">
+        <div class="p-9 md:p-[85px] bg-[#18181B] rounded-[24px] md:rounded-[32px] lg:rounded-[70px] mt-12 md:mt-24">
+            <div class="text-white text-center font-semibold text-2xl md:text-4xl mb-[22px]">
+                Болж байна. Үйлчилгээний хураамж нь тэгээд хэд гэнээ?
+            </div>
+            <div class="text-[#8B949E] text-sm md:text-base text-center mb-[32px] md:mb-[70px]">
+                Та үйлчилгээний эрхийн хэмжээг өөрчлөхийг хүсвэл дансны мэдээлэл хэсэгт <br> байрлах “Өөрчлөх” товч дээр дарна уу.
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5">
+                <div class="rounded-2xl bg-[#27272A] p-8 md:p-[50px]">
+                    <div class="text-white text-5xl font-normal">
+                        150,000₮
+                    </div>
+                    <hr class="opacity-25 my-4 md:my-9">
+                    <div class="text-white text-md md:text-xl font-bold mb-4 md:mb-9">
+                        Эрхийн хэмжээ
+                    </div>
+                    <div class="grid grid-cols-1 gap-5">
+                        <div class="flex items-center gap-2">
+                            <img
+                                class="w-4 h-4"
+                                src="./assets/images/success-orange.svg"
+                                alt="orange success"
+                            >
+                            <h5 class="text-white text-sm md:text-lg lg:text-md">
+                                Өр орлогын харьцаа тооцохгүй
+                            </h5>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                class="w-4 h-4"
+                                src="./assets/images/success-orange.svg"
+                                alt="orange success"
+                            >
+                            <h5 class="text-white text-sm md:text-lg lg:text-md">
+
+                                Үйлчилгээний хураамж 5,000₮
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-r from-[#F38D02] to-[#FC5803]  p-8 md:p-[50px]">
+                    <div class="text-white text-5xl font-normal">
+                        400,000₮
+                    </div>
+                    <hr class="opacity-[61%]  my-4 md:my-9">
+                    <div class="text-white text-md md:text-xl font-bold mb-4 md:mb-9">
+                        Эрхийн хэмжээ
+                    </div>
+                    <div class="grid grid-cols-1 gap-5">
+                        <div class="flex items-center gap-2">
+                            <img
+                                class="w-4 h-4"
+                                src="./assets/images/success-white.svg"
+                                alt="orange success"
+                            >
+                            <h5 class="text-white text-sm md:text-lg lg:text-md">
+
+
+                                Өр орлогын харьцаа тооцохгүй
+                            </h5>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                class="w-4 h-4"
+                                src="./assets/images/success-white.svg"
+                                alt="orange success"
+                            >
+                            <h5 class="text-white text-sm md:text-lg lg:text-md">
+
+                                Үйлчилгээний хураамж 5,000₮
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center text-wrap font-semibold lg:text-5xl md:text-3xl sm:text-xl mt-7 font-['Montserrat_Alternates']">Яааааааааааааааммммммарч асуудалгүй</h1>
+    </section>
+    <!-- Steps section -->
+    <section class="container px-2 md:px-4 mx-auto py-24 md:py-32 lg:py-60">
+        <div class="flex items-center justify-center relative">
+            <svg
+                class="w-[800px] h-auto wrap"
+                viewBox="0 0 549 83"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M230.057 69.3629C301.634 69.6708 361.231 72.1089 444.569 62.8323C478.388 59.0678 520.626 51.7793 520.626 51.7793C520.626 51.7793 545.419 46.5089 546.925 38.8952C548.431 31.2819 526.781 24.8399 526.781 24.8399C526.781 24.8399 502.512 17.6539 487.95 15.2275C447.34 8.46114 405.621 6.6162 363.722 5.1738C328.881 3.97439 269.145 2.63433 233.93 2.20925C209.672 1.91643 184.547 1.82817 160.196 2.63889C124.844 3.81584 88.5334 6.01021 54.0317 11.017C33.3117 14.0238 11.1244 14.6887 3.54364 28.3533C-1.60446 37.6328 6.78342 44.7471 18.9441 49.1577C38.8091 56.3626 61.3354 60.5203 83.5582 64.0449C119.96 69.8182 150.958 73.195 194.371 76.3757C278.521 82.5413 326.229 82.5414 410.38 76.3763"
+                    stroke="#FF6B3C"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    class="path"
+                />
+            </svg>
+            <h5 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  font-semibold md:text-3xl lg:text-5xl">
+                За яаж идэвхжүүлэх вэ?
+            </h5>
+        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-4">
+            <div class="flex flex-col justify-center items-center lg:justify-start">
+                <img
+                    src="./assets/images/phone1.png"
+                    class="w-[270px] h-auto object-cover"
+                    alt="step 1"
+                >
+                <p class="text-sm text-center mt-4 block lg:hidden">
+                    Дижитал банканд нэвтрэн харилцах эсвэл картын данс дээрээ дарж дэлгэрэнгүй хэсэг рүү орно.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img
+                    src="./assets/images/phone2.png"
+                    class="w-[270px] h-auto object-cover"
+                    alt="step 2"
+                >
+                <p class="text-sm text-center mt-4 block lg:hidden">
+                    Боломжит үлдэгдлийн доор байрлах “Асуудалгүй” үйлчилгээг идэвхжүүлэх товчийг дарна.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img
+                    src="./assets/images/phone3.png"
+                    class="w-[270px] h-auto object-cover"
+                    alt="step 3"
+                >
+                <p class="text-sm text-center mt-4 block lg:hidden">
+                    Үйлчилгээний нөхцөл, гэрээтэй танилцаад үргэлжлүүлнэ.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center lg:justify-end items-center">
+                <img
+                    src="./assets/images/phone4.png"
+                    class="w-[270px] h-auto object-cover"
+                    alt="step 4"
+                >
+                <p class="text-sm text-center mt-4 block lg:hidden">
+                    Гүйлгээний кодоо оруулан баталгаажуулснаар одоо та “Асуудалгүй” боллоо.
+                </p>
+            </div>
+        </div>
+        <div class="my-4 md:my-6 lg:my-8 w-full hidden lg:block">
+            <img
+                style="width: 100%;"
+                src="./assets/images/stepper.svg"
+                alt="stepper"
+            >
+        </div>
+        <div class="grid px-10 grid-cols-1 gap-x-40 md:grid-cols-2 lg:grid-cols-4 hidden lg:grid">
+            <div>
+                <p class="text-base">
+                    Дижитал банканд нэвтрэн харилцах эсвэл картын данс дээрээ дарж дэлгэрэнгүй хэсэг рүү орно.
+                </p>
+            </div>
+            <div>
+                <p class="text-base">
+                    Боломжит үлдэгдлийн доор байрлах “Асуудалгүй” үйлчилгээг идэвхжүүлэх товчийг дарна.
+                </p>
+            </div>
+            <div>
+                <p class="text-base">
+                    Үйлчилгээний нөхцөл, гэрээтэй танилцаад үргэлжлүүлнэ.
+                </p>
+            </div>
+            <div>
+                <p class="text-base">
+                    Гүйлгээний кодоо оруулан баталгаажуулснаар одоо та “Асуудалгүй” боллоо.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ section -->
+    <section class="container px-2 md:px-4 mx-auto py-12 md:py-30">
+        <div class="rounded-xl bg-gradient-to-b p-8 md-p12 lg:p-20 from-white to-transparent w-full">
+            <h1 class="w-full text-center font-semibold text-4xl mb-20">Дахиад хэдэн юм асуучих уу?</h1>
+            <div class="grid gap-10 grid-cols-1 lg:grid-cols-7 place-items-center">
+                <div class="col-span-1 lg:col-span-2">
+                    <img
+                        src="./assets/images/john-travolta.gif"
+                        alt=""
+                    >
+                </div>
+                <div class="col-span-1 lg:col-span-5">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button
+                                id="accordion-button-1"
+                                aria-expanded="false"
+                                class="flex gap-x-10 items-center"
+                            >
+                                <span
+                                    class="icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="accordion-title text-sm md:text-base">Асуудалгүй үйлчилгээг ХасБанкныхаа бүх дансанд идэвхжүүлж болох уу?</span>
+                            </button>
+                            <div class="accordion-content md:ml-[62px]">
+                                <p class="text-sm md:text-base">
+                                    Нэг л дансанд идэвхжүүлэх боломжтой. Иймд та олон харилцах данстай бол орлого дамжиж, идэвхтэй ашигладаг дансандаа энэхүү үйлчилгээг идэвхжүүлбэл илүү тохиромжтой.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button
+                                id="accordion-button-2"
+                                class="flex gap-x-10 items-center"
+                                aria-expanded="false"
+                            >
+                                <span
+                                    class="icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="accordion-title text-sm md:text-base">Асуудалгүй үйлчилгээний мэдээлэл зээлийн мэдээллийн санд очих уу?</span>
+                            </button>
+                            <div class="accordion-content md:ml-[62px]">
+                                <p class="text-sm md:text-base">
+                                    Энэ үйлчилгээг зээлтэй адилтган Зээлийн мэдээллийн санд нийлүүлнэ.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button
+                                id="accordion-button-3"
+                                class="flex gap-x-10 items-center"
+                                aria-expanded="false"
+                            >
+                                <span
+                                    class="icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="accordion-title text-sm md:text-base">Асуудалгүй үйлчилгээнээс ашигласан мөнгөө хэрхэн, хэзээ төлөх вэ?</span>
+                            </button>
+                            <div class="accordion-content md:ml-[62px]">
+                                <p class="text-sm md:text-base">
+                                    Та асуудалгүй үйлчилгээг идэвхжүүлэн ашиглаж эхэлснээс хойш 30 хоногийн дотор бүрэн төлөх ёстой бөгөөд дахиад хэдэн ч удаа ашиглаж болно.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button
+                                id="accordion-button-4"
+                                class="flex gap-x-10 items-center"
+                                aria-expanded="false"
+                            >
+                                <span
+                                    class="icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="accordion-title text-sm md:text-base">Төлбөрийн үлдэгдлээ хэрхэн харах вэ?</span>
+                            </button>
+                            <div class="accordion-content md:ml-[62px]">
+                                <p class="text-sm md:text-base">
+                                    Үйлчилгээг идэвхжүүлснээс хойш таны боломжтой хэрэглэж болох үлдэгдэл нэмэгдэж харагдах ба бодит үлдэгдэл таны дансны үлдэгдэл хэсэгт харагдана.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button
+                                id="accordion-button-5"
+                                class="flex gap-x-10 items-center"
+                                aria-expanded="false"
+                            >
+                                <span
+                                    class="icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="accordion-title text-sm md:text-base">Мессеж мэдэгдэл ирэх үү?</span>
+                            </button>
+                            <div class="accordion-content md:ml-[62px]">
+                                <p class="text-sm md:text-base">
+                                    Асуудалгүй үйлчилгээг идэвхжүүлэн хэрэглэж эхлэхэд болон дүүргэлт хийсний дараа дахин ашиглах бүрд танд мессежээр мэдэгдэх болно.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container px-2 md:px-4 mx-auto py-24 md:py-30">
+        <div class="flex lg:flex-row lg:justify-between lg:items-end items-start flex-col gap-y-20">
+            <div class="order-2 lg:order-1">
+                <div class="w-40 h-9">
+                    <img
+                        class="w-full h-full object-contain"
+                        src="./assets/images/logo.png"
+                        alt="Xacbank"
+                    >
+                </div>
+                <div>
+                    <div class="grid grid-cols-4 gap-2 mt-20">
+                        <div class="w-5 h-5">
+                            <a
+                                href="https://www.facebook.com/XacBank"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    class="w-full h-full object-contain"
+                                    src="./assets/images/facebook.svg"
+                                    alt="Xacbank facebook"
+                                >
+                            </a>
+                        </div>
+                        <div class="w-5 h-5">
+                            <a
+                                href="https://www.instagram.com/xacbankofficial"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    class="w-full h-full object-contain"
+                                    src="./assets/images/instagram.svg"
+                                    alt="Xacbank Instagram"
+                                >
+                            </a>
+                        </div>
+                        <div class="w-5 h-5">
+                            <a
+                                href="https://x.com/XacBank"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    class="w-full h-full object-contain"
+                                    src="./assets/images/x.svg"
+                                    alt="Xacbank Twitter"
+                                >
+                            </a>
+                        </div>
+                        <div class="w-5 h-5">
+                            <a
+                                href="https://youtube.com/@xacbankmongolia"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    class="w-full h-full object-contain"
+                                    src="./assets/images/youtube.svg"
+                                    alt="Xacbank youtube"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 mt-8">
+                        <a href="tel:1800-1888">
+                            <div class="flex gap-5 items-center">
+                                <div class="w-4 h-4">
+                                    <img
+                                        class="w-full h-full object-contain"
+                                        src="./assets/images/phone.svg"
+                                        alt="Phone"
+                                    >
+                                </div>
+                                <h4 class="font-medium text-base font-['Montserrat']">
+                                    1800-1888, 75771888
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="mailto:info@xacbank.mn">
+                            <div class="flex gap-5 items-center">
+                                <div class="w-4 h-4">
+                                    <img
+                                        class="w-full h-full object-contain"
+                                        src="./assets/images/email.svg"
+                                        alt="email"
+                                    >
+                                </div>
+                                <h4 class="font-medium text-base font-['Montserrat']">
+                                    info@xacbank.mn
+                                </h4>
+                            </div>
+                        </a>
+                        <a
+                            href="https://xacbank.mn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div class="flex gap-5 items-center">
+                                <div class="w-4 h-4">
+                                    <img
+                                        class="w-full h-full object-contain"
+                                        src="./assets/images/website.svg"
+                                        alt="Homepage"
+                                    >
+                                </div>
+                                <h4 class="font-medium text-base font-['Montserrat']">
+                                    www.xacbank.mn
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-auto order-1 lg:order-2">
+                <div
+                    class="p-3 md:p-4 lg:p-5 bg-white rounded-[24px] lg:rounded-[32px] flex items-center  overflow-visible relative "
+                    style="box-shadow: -4.21px 16.82px 12.95px 0px #111A2E14;"
+                >
+                    <div
+                        class="mr-3 lg:mr-6 w-10 h-10 lg:w-20 lg:h-20 rounded-lg lg:rounded-2xl overflow-hidden"
+                        style="box-shadow: -0.84px 3.36px 9.25px 0px #16233D24;"
+                    >
+                        <img
+                            width="w-full h-full"
+                            src="./assets/images/logo-square.png"
+                            alt="XacBank"
+                        >
+                    </div>
+                    <div class="mr-2 lg:mr-20">
+                        <div class="border-[#FF9500] border rounded-full py-1 px-2 max-w-fit flex gap-1 items-center">
+                            <div class="w-2 h-2 lg:w-3 lg:h-3">
+                                <img
+                                    class="w-full h-full object-contain"
+                                    src="./assets/images/search.svg"
+                                    alt="search"
+                                >
+                            </div>
+                            <h5 class="text-[10px] lg:text-[13px] font-['Roboto'] color-[#202330]">
+                                xacbank digital
+                            </h5>
+                        </div>
+                        <div class="flex gap-1 items-center mt-1 lg:mt-3">
+                            <a
+                                href="https://apps.apple.com/us/app/xacbank/id1534265552"
+                                target="_blank"
+                                rel="noreferrer noreferrer"
+                            >
+                                <div class="w-18 h-6 md:w-24 md:h-12 lg:w-[94px] lg:h-[27px]">
+                                    <img
+                                        class="w-full h-full object-contain"
+                                        src="./assets/images/appstore.svg"
+                                        alt="Appstore"
+                                    >
+                                </div>
+                            </a>
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.xacbank.mobile&hl=mn"
+                                target="_blank"
+                                rel="noreferrer noreferrer"
+                            >
+                                <div class="w-18 h-6 md:w-24 md:h-12 lg:w-[94px] lg:h-[27px]">
+                                    <img
+                                        class="w-full h-full object-contain"
+                                        src="./assets/images/googleplay.svg"
+                                        alt="Google Play"
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-12 lg:w-72 h-auto">
+                        <img
+                            class="w-36 h-30 md:w-48 md:h-40 lg:w-72 lg:h-60  absolute bottom-0 right-5"
+                            src="./assets/images/footer-banner.png"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

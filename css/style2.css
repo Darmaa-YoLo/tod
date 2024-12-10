@@ -1,0 +1,49 @@
+.tod-primary {
+    color: #FF8400;
+}
+
+.tod-secondary {
+    color: #FF6200;
+}
+
+.tod-black {
+    color: #000000;
+}
+
+.tod-dark {
+    color: #1F2B3E;
+}
+
+.tod-darker {
+    color: #33353A;
+}
+
+.tod-darkest {
+    color: #1E1E2A;
+}
+
+.tod-light {
+    color: #F5F5F7;
+}
+
+.tod-white {
+    color: #FFFFFF;
+}
+
+video {
+    pointer-events: none;
+    clip-path: inset(1px 1px);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 15s linear infinite;
+}
